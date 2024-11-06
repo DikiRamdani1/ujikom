@@ -2,26 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+.hide-scrollbar {
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+
+.modalPinjamBrg {
+  animation: modalPinjamBrg .7s ease-in-out;
+  -webkit-animation: modalPinjamBrg .7s ease-in-out;
+}
+
+@keyframes modalPinjamBrg {
+  0%{
+    scale: 0.5;
+  }50%{
+    scale: 1.1;
+  }100%{
+    scale: 1;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.animateOpacity {
+  animation: animeOpacity .7s ease-in-out;
+  -webkit-animation: animeOpacity .7s ease-in-out;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@keyframes animeOpacity {
+  0%{
+    opacity: 0;
+  }100%{
+    scale: 1;
   }
 }
