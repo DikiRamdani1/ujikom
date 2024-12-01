@@ -37,7 +37,7 @@ const Page = async () => {
           </div>
         </div>
         <div className="mt-7 md:mt-5 w-full flex flex-col-reverse md:flex-row gap-x-5">
-          {/* <div className="w-full px-2 md:px-0 mt-7 md:mt-0 flex flex-col gap-y-5">
+          <div className="w-full px-2 md:px-0 mt-7 md:mt-0 flex flex-col gap-y-5">
             <section>
               <ListBarang api={barang} title={"Barang"} link={false} />
             </section>
@@ -47,7 +47,7 @@ const Page = async () => {
             <section>
               <ListBarang api={barangNew} title={"Terbaru"} link={"terbaru"} />
             </section>
-          </div> */}
+          </div>
         </div>
       </UserLayout>
   )
