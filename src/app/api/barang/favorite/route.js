@@ -46,7 +46,7 @@ export const GET = async (request) => {
     }
 
     try {
-        const data = await joinTable(`SELECT barang.id, barang.nama, barang.image, barang.rating FROM favorite INNER JOIN barang ON favorite.id_barang = barang.id WHERE favorite.id_user = ${userId} ORDER BY favorite.createdAt DESC LIMIT ${limit} OFFSET ${offset};`)
+        const data = await joinTable(`SELECT barang.id AS barang_id, barang.nama, barang.image, barang.rating FROM favorite INNER JOIN barang ON favorite.id_barang = barang.id WHERE favorite.id_user = ${userId} ORDER BY favorite.createdAt DESC LIMIT ${limit} OFFSET ${offset};`)
         if (!data) {
             return res.json({
                 status: 404,

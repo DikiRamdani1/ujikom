@@ -39,7 +39,7 @@ const MyDocument = ({ api }) => (
             <View style={styles.table}>
                 {/* Header Row */}
                 <View style={styles.tableRow}>
-                    <View style={{width: '10px'}}>
+                    <View style={{width: '50px', borderStyle: 'solid', borderWidth: 1, borderColor: '#000'}}>
                         <Text style={styles.tableCellHeader}>NO</Text>
                     </View>
                     <View style={styles.tableCol}>
@@ -71,7 +71,7 @@ const MyDocument = ({ api }) => (
                 ? api.data.map((data, index) => {
                     return (
                         <View key={index} style={styles.tableRow}>
-                            <View style={{width: '10px'}}>
+                            <View style={{width: '50px', borderStyle: 'solid', borderWidth: 1, borderColor: '#000'}}>
                                 <Text style={styles.tableCell}>{index + 1}</Text>
                             </View>
                             <View style={styles.tableCol}>
