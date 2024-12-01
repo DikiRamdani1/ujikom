@@ -1,9 +1,9 @@
 
 import { Arvo } from "next/font/google"
-import getData from "@/lib/api-libs/api"
 import { getServerSession } from "next-auth"
 import UserLayout from "../layout/userLayout"
 import ContentPeminjaman from "@/components/tab/content"
+import { getData } from "@/lib/api-libs/api"
 
 const arvo = Arvo({ subsets: ["latin"], weight: "400" })
 

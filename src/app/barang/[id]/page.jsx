@@ -1,5 +1,4 @@
 import { Arvo } from "next/font/google"
-import getData from "@/lib/api-libs/api"
 import Image from "next/image"
 import { IoStarSharp } from "react-icons/io5"
 import TrendingBarang from "@/components/listBarang/trending"
@@ -8,6 +7,7 @@ import ButtonPinjam from "@/components/modal/pinjamBarang/button"
 import { getServerSession } from "next-auth"
 import UserLayout from "@/app/layout/userLayout"
 import ButtonFavorite from "@/components/favorite/button"
+import { getData } from "@/lib/api-libs/api"
 
 const arvo = Arvo({ subsets: ["latin"], weight: "400" })
 

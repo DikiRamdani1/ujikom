@@ -1,6 +1,6 @@
 import { getServerSession } from "next-auth"
 import UserLayout from "../layout/userLayout"
-import getData from "@/lib/api-libs/api"
+import { getData } from "@/lib/api-libs/api"
 
 const Page = async () => {
     const session = await getServerSession()

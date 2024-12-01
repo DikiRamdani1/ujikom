@@ -1,9 +1,8 @@
 import ListBarang from "@/components/listBarang"
-import TrendingBarang from "@/components/listBarang/trending"
-import getData from "@/lib/api-libs/api"
 import Pagination from "@/components/pagination"
 import { getServerSession } from "next-auth"
 import UserLayout from "@/app/layout/userLayout"
+import { getData } from "@/lib/api-libs/api"
 
 
 const Page = async ({ params }) => {

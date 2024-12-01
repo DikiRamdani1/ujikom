@@ -1,12 +1,11 @@
 import { getServerSession } from "next-auth"
-import getData from "@/lib/api-libs/api"
 import { Arvo } from "next/font/google"
 import handleSizePhotoUser from "@/utils/photoUserSize"
 import Image from "next/image"
-import { GiNotebook } from "react-icons/gi"
 import ContentPeminjaman from "@/components/tab/content"
 import UserLayout from "../layout/userLayout"
 import ButtonUbahProfil from "@/components/modal/ubahProfil/button"
+import { getData } from "@/lib/api-libs/api"
 
 const arvo = Arvo({ subsets: ["latin"], weight: "400" })
 
